@@ -1,25 +1,22 @@
-
 terraform {
-
-  required_version = ">= 0.14.0"
-
   required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = ">= 3.72"
+    wasabi = {
+      source  = "k-t-corp/wasabi"
+      version = "4.1.1"
     }
-    local = {
-      source  = "hashicorp/local"
-      version = ">= 2.1.0"
-    }
+  }
+}
+
+provider "wasabi" {
+  region     = "us-east-1"
+  access_key = "..."
+  secret_key = "..."
+
+  endpoints {
+    sts = "https://sts.wasabisys.com"
+    iam = "https://iam.wasabisys.com"
+    s3  = "https://s3.wasabisys.com"
   }
 
-  backend "s3" {
-    bucket         = "terraform-incnow"
-    key            = "us-east-1/test/maklai-test/terraform.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-    dynamodb_table = "terraform_locks"
-    profile        = "incnow"
-  }
+  s3_force_path_style = true
 }
