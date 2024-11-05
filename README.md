@@ -12,7 +12,7 @@ Test task
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_wasabi"></a> [wasabi](#provider\_wasabi) | 4.1.1 |
 
 ## Modules
 
@@ -22,11 +22,11 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_iam_policy.bucket_read_only](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
-| [aws_iam_policy.bucket_read_write](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
-| [aws_iam_user.users](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user) | resource |
-| [aws_iam_user_policy_attachment.user_policy_attachment](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user_policy_attachment) | resource |
-| [aws_s3_bucket.buckets](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
+| [wasabi_bucket.buckets](https://registry.terraform.io/providers/k-t-corp/wasabi/4.1.1/docs/resources/bucket) | resource |
+| [wasabi_policy.bucket_read_only](https://registry.terraform.io/providers/k-t-corp/wasabi/4.1.1/docs/resources/policy) | resource |
+| [wasabi_policy.bucket_read_write](https://registry.terraform.io/providers/k-t-corp/wasabi/4.1.1/docs/resources/policy) | resource |
+| [wasabi_policy_attachment.user_policy_attachment](https://registry.terraform.io/providers/k-t-corp/wasabi/4.1.1/docs/resources/policy_attachment) | resource |
+| [wasabi_user.users](https://registry.terraform.io/providers/k-t-corp/wasabi/4.1.1/docs/resources/user) | resource |
 
 ## Inputs
 

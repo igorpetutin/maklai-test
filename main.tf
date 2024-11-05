@@ -33,8 +33,8 @@ locals {
         user   = user
         bucket = bucket
         policy_arn = lookup({
-          "ro" = aws_iam_policy.bucket_read_only[bucket].arn,
-          "rw" = aws_iam_policy.bucket_read_write[bucket].arn
+          "ro" = wasabi_policy.bucket_read_only[bucket].arn,
+          "rw" = wasabi_policy.bucket_read_write[bucket].arn
         }, permission, null)
       }
     ]
