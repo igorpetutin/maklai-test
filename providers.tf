@@ -3,7 +3,6 @@ provider "wasabi" {
   profile = "wasabi_prod"
 
   endpoints {
-    sts = "https://sts.wasabisys.com"
     iam = "https://iam.wasabisys.com"
     s3  = "https://s3.wasabisys.com"
   }
